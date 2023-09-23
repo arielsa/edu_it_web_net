@@ -1,0 +1,32 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Modificar</title>
+</head>
+<body>
+    <div> 
+        <form action="/Home/Modificar" method="post">
+            <label>
+                Id: <br />
+                    <input type="hidden" name="id" value="@Model.Id" readonly />
+            </label> <br />
+            <label>
+                nombre: <br />
+                        <input type="text" name="nombre" value="@Model.Nombre" />
+            </label> <br />
+            <label>
+                precio: <br />
+                          <input type="text" name="apellido" value="@Model.Precio" />
+            </label> <br />
+            
+            <input type="submit" value="Modificar" />
+</div>
+</body>
+</html>
